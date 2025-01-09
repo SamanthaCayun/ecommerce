@@ -1,0 +1,8 @@
+<div class="container mt-5" *ngIf="product">
+  <h1>{{ product.name }}</h1>
+  <img [src]="product.image" class="img-fluid mb-3" alt="Product Image">
+  <p><strong>Descripción:</strong> {{ product.description }}</p>
+  <p><strong>Precio:</strong> $ {{ product.price }}</p>
+  <p><strong>Categoría:</strong> {{ product.category }}</p>
+  <a routerLink="/" class="btn btn-secondary">Volver al Inicio</a>
+</div>
